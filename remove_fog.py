@@ -74,7 +74,7 @@ def repair(img_input, input_t, input_a):
 
 
 if __name__ == "__main__":
-    img = cv.imread('C:\\Users\\Administrator\\Desktop\\R-C-1.jpg')
+    img = cv.imread('img/R-C-1.jpg')
     img_arr = np.array(img / 255.0)  # 归一化
     img_min = darkChannel(img_arr)  # 计算每个通道的最小值
     img_dark = min_filter(img_min, 2)  # 计算暗通道图像
